@@ -1,0 +1,13 @@
+[package]
+
+name = "espeak-sys"
+version = "0.0.1"
+authors = ["Chandler Atchley <ctatchley@gmail.com>"]
+description = "Low-level bindings to libespeak"
+homepage = "https://github.com/ctatchley/espeak-sys"
+repository = "https://github.com/ctatchley/espeak-sys"
+readme = "README.md"
+keywords = ["espeak", "tts", "speech"]
+
+[dependencies]
+libc = "0.1"
