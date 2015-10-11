@@ -2,7 +2,7 @@
 
 name = "espeak-sys"
 version = "0.0.2"
-license = "GNU GPL v3"
+license = "GPL-3.0"
 authors = ["Chandler Atchley <ctatchley@gmail.com>"]
 description = "Low-level bindings to libespeak"
 homepage = "https://github.com/ctatchley/espeak-sys"
