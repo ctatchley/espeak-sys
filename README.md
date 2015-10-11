@@ -19,7 +19,7 @@ Just add `espeak-sys` as a dependency in `Cargo.toml` and link to it within your
 
 ```toml
 [dependencies]
-espeak-sys = "0.0.1"
+espeak-sys = "0.0.2"
 ```
 
 ```rust
