@@ -40,5 +40,5 @@ The function of each of the symbols this crate exposes is best documented in the
 ## License
 Copyright © 2015 Chandler Atchley
 
-Distributed under the [MIT License](LICENSE).
+Distributed under the [GNU GPL v3 License](LICENSE).
 
