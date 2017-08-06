@@ -124,6 +124,29 @@ pub struct espeak_VOICE {
 	spare: *mut c_void
 }
 
+impl espeak_VOICE {
+    	pub fn new(
+		name: *const c_char,
+		languages: *const c_char,
+		identifier: *const c_char,
+		gender: c_uchar,
+		age: c_uchar,
+		variant: c_uchar) -> espeak_VOICE
+	{
+		espeak_VOICE {
+			name,
+			languages,
+			identifier,
+			gender,
+			age,
+			variant,
+			xx1: 0,
+			score: 0,
+			spare: std::ptr::null_mut(),
+		}
+	}
+}
+
 pub type t_espeak_callback = extern "C" fn(*mut c_short, c_int, *mut espeak_EVENT) -> c_int;
 
 #[link(name = "espeak")]
