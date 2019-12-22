@@ -11,4 +11,4 @@ readme = "README.md"
 keywords = ["espeak", "tts", "speech"]
 
 [dependencies]
-libc = "0.1"
+libc = "^0.2"

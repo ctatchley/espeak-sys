@@ -17,7 +17,8 @@
 #![allow(non_camel_case_types)]
 extern crate libc;
 
-use libc::{c_int, c_char, c_uchar, c_void, c_short, size_t, c_uint, wchar_t, FILE};
+use libc::{c_int, c_char, c_uchar, c_short, size_t, c_uint, wchar_t, FILE};
+use std::ffi::c_void;
 
 pub const espeakRATE_MINIMUM: c_int = 80;
 pub const espeakRATE_MAXIMUM: c_int = 450;
@@ -149,7 +150,7 @@ impl espeak_VOICE {
 
 pub type t_espeak_callback = extern "C" fn(*mut c_short, c_int, *mut espeak_EVENT) -> c_int;
 
-#[link(name = "espeak")]
+#[link(name = "espeak-ng")]
 extern "C" {
 	pub fn espeak_Initialize(output: espeak_AUDIO_OUTPUT, buflength: c_int, path: *const c_char, options: c_int) -> c_int;
 	pub fn espeak_SetSynthCallback(SynthCallback: t_espeak_callback);
